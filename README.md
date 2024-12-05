@@ -1,6 +1,6 @@
-# lxc-iptag
+# PVE-AUTOTAG
 
-lxc-iptag is a simple script to add ip tags to LXC containers.
+PVE-AUTOTAG is a simple script to add tags with meta data to LXCs/VMs in Proxmox VE.
 
 ![](./img/pve-lxc-iptag.png)
 
