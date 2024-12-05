@@ -12,10 +12,10 @@ FW_NET_INTERFACE_CHECK_INTERVAL=60
 LXC_STATUS_CHECK_INTERVAL=-1
 FORCE_UPDATE_INTERVAL=1800
 
-if [ -f "/usr/local/etc/lxc-iptag.conf" ]; then
-    # shellcheck source=./lxc-iptag.conf
-    # shellcheck source=/usr/local/etc/lxc-iptag.conf
-    source /usr/local/etc/lxc-iptag.conf
+if [ -f "/usr/local/etc/pve-autotag.conf" ]; then
+    # shellcheck source=./pve-autotag.conf
+    # shellcheck source=/usr/local/etc/pve-autotag.conf
+    source /usr/local/etc/pve-autotag.conf
 fi
 
 # =============== UTIL_FUNCTION =============== #
