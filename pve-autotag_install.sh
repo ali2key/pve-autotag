@@ -5,14 +5,14 @@ set -xe
 # install prerequisites
 apt install -y ipcalc
 
-# install lxc-iptag
-curl -sSL https://raw.githubusercontent.com/gitsang/lxc-iptag/main/lxc-iptag -o /usr/local/bin/lxc-iptag && chmod +x /usr/local/bin/lxc-iptag
-curl -sSL https://raw.githubusercontent.com/gitsang/lxc-iptag/main/lxc-iptag.conf -o /usr/local/etc/lxc-iptag.conf
+# install pve-autotag
+curl -sSL https://raw.githubusercontent.com/ali2key/pve-autotag/main/pve-autotag -o /usr/local/bin/pve-autotag.sh && chmod +x /usr/local/bin/pve-autotag.sh
+curl -sSL https://raw.githubusercontent.com/ali2key/pve-autotag/main/pve-autotag.conf -o /usr/local/etc/pve-autotag.conf
 
-# configure lxc-iptag systemd
-curl -sSL https://raw.githubusercontent.com/gitsang/lxc-iptag/main/lxc-iptag.service -o /lib/systemd/system/lxc-iptag.service
+# configure pve-autotag systemd
+curl -sSL https://raw.githubusercontent.com/ali2key/pve-autotag/main/pve-autotag.service -o /lib/systemd/system/pve-autotag.service
 
-# start lxc-iptag
+# start pve-autotag
 systemctl daemon-reload
-systemctl enable lxc-iptag.service
-systemctl start lxc-iptag.service
+systemctl enable pve-autotag.service
+systemctl start pve-autotag.service
