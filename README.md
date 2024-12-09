@@ -7,28 +7,28 @@ PVE-AUTOTAG is a simple script to add auto tags to LXCs/VMs with IPs and guest O
 ## 1. Installation
 
 ```sh
-curl -sL https://github.com/gitsang/lxc-iptag/raw/main/install.sh | bash
+curl -sL https://github.com/gitsang/pve-autotag/raw/main/install.sh | bash
 ```
 
 This script will:
 
 - Install script prerequisites
-- Install the `lxc-iptag` script to `/usr/local/bin/lxc-iptag`
-- Copy config file to `/usr/local/etc/lxc-iptag.conf`
+- Install the `pve-autotag` script to `/usr/local/bin/pve-autotag`
+- Copy config file to `/usr/local/etc/pve-autotag.conf`
 - Add a systemd unit to start the service
 
 ### 1.1 Update
 
 ```sh
-curl -sSL https://raw.githubusercontent.com/gitsang/lxc-iptag/main/lxc-iptag -o /usr/local/bin/lxc-iptag && chmod +x /usr/local/bin/lxc-iptag
-systemctl restart lxc-iptag.service
+curl -sSL https://raw.githubusercontent.com/gitsang/pve-autotag/main/pve-autotag -o /usr/local/bin/pve-autotag && chmod +x /usr/local/bin/pve-autotag
+systemctl restart pve-autotag.service
 ```
 
-This script will only update the `lxc-iptag` executable script
+This script will only update the `pve-autotag` executable script
 
 ## 2. Configure
 
-Open `/usr/local/ect/lxc-iptag.conf` and change the config
+Open `/usr/local/ect/pve-autotag.conf` and change the config
 
 | Option                          | Example                                     | Description                                                                                             |
 | ------------------------------- | ------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
