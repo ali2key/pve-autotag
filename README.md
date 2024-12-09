@@ -1,6 +1,6 @@
 # PVE-AUTOTAG
 
-PVE-AUTOTAG is a simple script to add tags with meta data to LXCs/VMs in Proxmox VE.
+PVE-AUTOTAG is a simple script to add auto tags to LXCs/VMs with IPs and guest OS metadata (distro, version, etc) in Proxmox VE.
 
 ![](./img/pve-lxc-iptag.png)
 
