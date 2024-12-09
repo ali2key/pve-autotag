@@ -7,7 +7,7 @@ PVE-AUTOTAG is a simple script to add auto tags to LXCs/VMs with IPs and guest O
 ## 1. Installation
 
 ```sh
-curl -sL https://github.com/gitsang/pve-autotag/raw/main/install.sh | bash
+curl -sL https://github.com/ali2key/pve-autotag/raw/main/install.sh | bash
 ```
 
 This script will:
@@ -20,7 +20,7 @@ This script will:
 ### 1.1 Update
 
 ```sh
-curl -sSL https://raw.githubusercontent.com/gitsang/pve-autotag/main/pve-autotag -o /usr/local/bin/pve-autotag && chmod +x /usr/local/bin/pve-autotag
+curl -sSL https://raw.githubusercontent.com/ali2key/pve-autotag/main/pve-autotag -o /usr/local/bin/pve-autotag && chmod +x /usr/local/bin/pve-autotag
 systemctl restart pve-autotag.service
 ```
 
